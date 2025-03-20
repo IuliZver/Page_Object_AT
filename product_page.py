@@ -27,3 +27,9 @@ class ProductPage(BasePage):
         except NoSuchElementException:
             return False
         return True
+    
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), "Success message is presented, but should not be"
+
+    def should_disappear_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), "Success message should disappear, but it did not"
