@@ -1,7 +1,6 @@
 import math
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoAlertPresentException 
-
 class BasePage():
     def __init__(self, browser, url):
         self.browser = browser

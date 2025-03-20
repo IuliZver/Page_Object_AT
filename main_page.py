@@ -8,8 +8,7 @@ class MainPage(BasePage):
     def go_to_login_page(self):
         link = self.browser.find_element(*MainPageLocators.LOGIN_LINK)
         link.click()
-        #return LoginPage(browser=self.browser, url=self.browser.current_url)
-    
+        #return LoginPage(browser=self.browser, url=self.browser.current_url)    
     """def go_to_login_page(self):
         link = self.browser.find_element(By.CSS_SELECTOR, "#login_link")
         link.click()

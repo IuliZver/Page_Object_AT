@@ -15,6 +15,4 @@ def test_guest_can_add_product_to_basket(browser, promo_code):
     page.should_be_correct_basket_total()  #pytest -s
     
 """проверку можно реализовать:
-@pytest.mark.parametrize('link', ["okay_link",
-                                  pytest.param("bugged_link", marks=pytest.mark.xfail),
-                                  "okay_link"])"""
+@pytest.mark.parametrize('link', ["okay_link", pytest.param("bugged_link", marks=pytest.mark.xfail), "okay_link"])"""
